@@ -34,6 +34,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rodjek/vim-puppet'
 Plugin 'LeonB/vim-nginx'
+Plugin 'injo/taglist.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -157,14 +158,14 @@ let g:airline_right_sep=''
 
 " vim folding
 " folding settings
-" set foldmethod=indent   "fold based on indent
+set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
 " remember folding
-" autocmd BufWrite * mkview
-" autocmd BufRead * silent loadview
+autocmd BufWrite * mkview
+autocmd BufRead * silent loadview
 
 " Act
 let g:ackprg="~/.vim/bin/ack -H --nocolor --nogroup --column"
