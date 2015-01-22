@@ -34,7 +34,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rodjek/vim-puppet'
 Plugin 'LeonB/vim-nginx'
-Plugin 'injo/taglist.vim'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
