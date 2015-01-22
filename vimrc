@@ -5,11 +5,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'gmarik/vundle'
 " Plugins used by me
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'itchyny/lightline.vim'
+Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'kien/ctrlp.vim'
@@ -37,7 +37,7 @@ Plugin 'majutsushi/tagbar'
 call vundle#end()
 filetype plugin indent on
 
-" Settings 
+" Settings
 set nocompatible
 set encoding=utf-8
 set term=screen-256color
@@ -144,6 +144,8 @@ map <Down>  :echo "no!"<cr>
 
 " vim airline
 set laststatus=2
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " vim folding
 set foldmethod=indent   "fold based on indent
@@ -157,7 +159,7 @@ autocmd BufRead * silent loadview
 
 " Act
 let g:ackprg="~/.vim/bin/ack -H --nocolor --nogroup --column"
-map <leader>s :Ack 
+map <leader>s :Ack
 
 " NERDTree
 map <leader>t :NERDTree<cr>
