@@ -158,7 +158,7 @@ autocmd BufWrite * mkview
 autocmd BufRead * silent loadview
 
 " Act
-let g:ackprg="~/.vim/bin/ack -H --nocolor --nogroup --column"
+let g:ackprg="ack -H --nocolor --nogroup --column"
 map <leader>s :Ack
 
 " NERDTree
