@@ -37,6 +37,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rodjek/vim-puppet'
 Plugin 'LeonB/vim-nginx'
 Plugin 'majutsushi/tagbar'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 call vundle#end()
 filetype plugin indent on
