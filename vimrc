@@ -45,7 +45,7 @@ filetype plugin indent on
 set nocompatible
 set encoding=utf-8
 set term=screen-256color
-set timeoutlen=250
+set timeoutlen=1000 ttimeoutlen=0
 
 runtime macros/matchit.vim  " enables % to cycle through `if/else/endif`
 
