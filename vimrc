@@ -9,19 +9,17 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 " Plugins used by me
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'bling/vim-airline'
+Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'kien/ctrlp.vim'
 Plugin 'slim-template/vim-slim'
-Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'tpope/vim-commentary'
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'markee/vim-snippets'
+Plugin 'markgeek/vim-snippets'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'godlygeek/tabular'
 Plugin 'thinca/vim-quickrun'
@@ -127,11 +125,6 @@ map <leader>gg :topleft 25 :split Gemfile<cr>
 map <leader>gd :topleft 25 :split config/deploy.rb<cr>
 map <leader>gr :topleft 25 :split config/routes.rb<cr>
 
-let g:ctrlp_extensions = ['funky']
-nnoremap <Leader>fu :CtrlPFunky<Cr>
-" narrow the list down with a word under cursor
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-
 " ignore Rubinius, Sass cache files
 set wildignore+=tmp/**,*.rbc,.rbx,*.scssc,*.sassc,app/assets/images/**,public/**
 
@@ -151,13 +144,8 @@ map <Down>  :echo "no!"<cr>
 
 " vim airline
 set laststatus=2
-" let g:airline_left_sep='›'
-" let g:airline_right_sep='‹'
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 
 " vim folding
-" folding settings
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
