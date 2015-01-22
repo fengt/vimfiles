@@ -158,6 +158,7 @@ autocmd BufWrite * mkview
 autocmd BufRead * silent loadview
 
 " Act
+" install ack for your system from http://beyondgrep.com/
 let g:ackprg="ack -H --nocolor --nogroup --column"
 map <leader>s :Ack
 
