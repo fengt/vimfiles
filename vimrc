@@ -55,7 +55,7 @@ set background=dark
 colorscheme hybrid
 
 set number      " line numbers
-set numberwidth=6
+set numberwidth=4
 set ruler       " show the cursor position all the time
 set cursorline  " highlight the line of the cursor
 set showcmd     " show partial commands below the status line
@@ -180,9 +180,7 @@ set splitright
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_force_overwrite_completefunc=1
 
-if !exists('g:neocomplcache_force_omni_patterns')
-  let g:neocomplcache_force_omni_patterns={}
-endif
+let g:neocomplcache_force_omni_patterns={}
 let g:neocomplcache_force_omni_patterns.ruby='[^. \t]\.\w*'
 
 " Enable omni completion.
@@ -197,14 +195,13 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global=1
 autocmd FileType ruby,eruby let g:rubycomplete_include_object=1
 autocmd FileType ruby,eruby let g:rubycomplete_include_objectspace=1
 
-" Neosnippet
-" Plugin key-mappings.
+" Neosnippet Plugin key-mappings.
 let g:neosnippet#enable_snipmate_compatibility=1
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
