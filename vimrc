@@ -38,6 +38,7 @@ Plugin 'LeonB/vim-nginx'
 Plugin 'majutsushi/tagbar'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
