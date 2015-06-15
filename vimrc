@@ -21,6 +21,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'markgeek/vim-snippets'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'junegunn/vim-easy-align'
@@ -39,6 +40,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'rking/ag.vim'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
