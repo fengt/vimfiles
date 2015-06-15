@@ -37,6 +37,8 @@ Plugin 'LeonB/vim-nginx'
 Plugin 'majutsushi/tagbar'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'dkprice/vim-easygrep'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -161,10 +163,8 @@ set foldlevel=1         "this is just what i use
 autocmd BufWrite * mkview
 autocmd BufRead * silent loadview
 
-" Act
-" install ack for your system from http://beyondgrep.com/
-let g:ackprg="ack -H --nocolor --nogroup --column"
-map <leader>s :Ack
+" Ag
+map <leader>s :Ag
 
 " NERDTree
 map <leader>t :NERDTree<cr>
