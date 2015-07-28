@@ -1,13 +1,12 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
-" Plugins used by me
+Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'w0ng/vim-hybrid'
@@ -18,7 +17,6 @@ Plugin 'Yggdroot/indentLine'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-" Plugin 'markgeek/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'thinca/vim-quickrun'
 Plugin 'pangloss/vim-javascript'
@@ -40,10 +38,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
 Plugin 'Shougo/neocomplcache.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'markgeek/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
