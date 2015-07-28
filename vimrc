@@ -12,35 +12,38 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/ctrlp.vim'
 Plugin 'slim-template/vim-slim'
-Plugin 'tpope/vim-commentary'
 Plugin 'Yggdroot/indentLine'
+
 Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/neocomplcache.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'markgeek/vim-snippets'
-Plugin 'vim-ruby/vim-ruby'
+Plugin 'scrooloose/syntastic'
+" Plugin 'markgeek/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'thinca/vim-quickrun'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Townk/vim-autoclose'
-Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'rodjek/vim-puppet'
 Plugin 'LeonB/vim-nginx'
 Plugin 'majutsushi/tagbar'
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'rking/ag.vim'
+
 Plugin 'rust-lang/rust.vim'
+
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/unite.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -118,20 +121,10 @@ endif
 
 let mapleader=","
 
-" CtrlP mappings
-autocmd VimEnter * if exists(":CtrlP") | exe "unmap <c-p>" |
-map <Leader>ff :CtrlP<cr>
-map <leader>ga :CtrlP app/apis<cr>
-map <leader>gv :CtrlP app/views<cr>
-map <leader>gc :CtrlP app/controllers<cr>
-map <leader>gm :CtrlP app/models<cr>
-map <leader>gh :CtrlP app/helpers<cr>
-map <leader>gf :CtrlP config<cr>
-map <leader>gl :CtrlP lib<cr>
-map <leader>gs :CtrlP spec<cr>
-map <leader>gg :topleft 25 :split Gemfile<cr>
-map <leader>gd :topleft 25 :split config/deploy.rb<cr>
-map <leader>gr :topleft 25 :split config/routes.rb<cr>
+map <Leader>ff :Unite file_rec -winheight=30 -start-insert<cr>
+
+map <leader>gg :topleft 35 :split Gemfile<cr>
+map <leader>gr :topleft 35 :split config/routes.rb<cr>
 
 " ignore Rubinius, Sass cache files
 set wildignore+=tmp/**,*.rbc,.rbx,*.scssc,*.sassc,app/assets/images/**,public/**
