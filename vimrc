@@ -27,8 +27,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'rking/ag.vim'
 
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'rust-lang/rust.vim'
-
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
