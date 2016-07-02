@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'joshdick/onedark.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'slim-template/vim-slim'
 Plugin 'Yggdroot/indentLine'
@@ -44,6 +44,8 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'markgeek/vim-snippets'
+
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 filetype plugin indent on
