@@ -46,6 +46,10 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'markgeek/vim-snippets'
 
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -190,6 +194,11 @@ autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading=1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global=1
 autocmd FileType ruby,eruby let g:rubycomplete_include_object=1
 autocmd FileType ruby,eruby let g:rubycomplete_include_objectspace=1
+
+autocmd VimEnter *       RainbowParenthesesToggle
+autocmd Syntax   clojure RainbowParenthesesLoadRound
+autocmd Syntax   clojure RainbowParenthesesLoadSquare
+autocmd Syntax   clojure RainbowParenthesesLoadBraces
 
 " Neosnippet Plugin key-mappings.
 let g:neosnippet#enable_snipmate_compatibility=1
